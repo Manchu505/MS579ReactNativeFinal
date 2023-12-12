@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "SplashScreen",
+    "slug": "SplashScreen",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/QRCodeMe(4096).png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "plugins": [
+        [
+          "expo-contacts",
+          {
+            "contactsPermission": "Allow $(PRODUCT_NAME) to access your contacts."
+          },
+          "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+        ]
+      ]  
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      
+    },
+    "android": {
+      "permissions": ["CAMERA", "READ_CONTACTS", "WRITE_CONTACTS"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
